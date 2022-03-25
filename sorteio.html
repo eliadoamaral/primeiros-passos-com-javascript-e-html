@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa é capaz de realizar o sorteio de um número.
+
+document.write("<title> Sorteio </title>");
+
+var sorteio = Math.round(Math.random()*100);
+var chute = parseInt(prompt("Qual seu número escolhido?"));
+
+exibir("<h1> Bem vindo ao meu Programa! </h1>");
+exibir("<big> <b> SORTEIO </big> </b> ");
+exibir("<big> Jogo adivinha de um número entre 1 e 100. </big>");
+
+if (chute ==sorteio) {
+
+	exibir("Parabéns! você acertou.");
+
+} else {
+	
+	exibir("Não foi dessa vez, você errou! O número pensado foi: " + sorteio);
+}
+
+</script>

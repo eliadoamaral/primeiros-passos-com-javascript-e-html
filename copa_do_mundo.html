@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa exibe ao usuário todos os anos que tiveram copa do mundo até o ano desejado.
+
+document.write("<title> Copa do mundo </title>");
+
+var anoAtual = parseInt(prompt("Por favor, digite o ano desejado"));
+var anoCopa = 1930;
+
+exibir("<h1> Bem-vindo ao meu Programa! </h1>");
+exibir("<big> <b> ANOS QUE OCORRERAM A COPA DO MUNDO </big> </b>");
+exibir("<big> A Copa do Mundo de Futebol é um campeonato internacional organizado pela FIFA e conta com a participação das principais seleções de futebol do mundo. O evento ocorre a cada 4 anos, sendo a primeira edição em 1930. </big>");
+
+while (anoCopa <= anoAtual) {
+	exibir("• Teve copa do mundo em " + anoCopa);
+	anoCopa = anoCopa + 4;
+}
+
+exibir("FIM");
+
+</script>

@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa é uma introdução ao "for".
+
+document.write("<title> Tabuada </title>");
+exibir("<h1> Bem-vindo ao meu Programa! </h1>");
+exibir("<big> <b> TABUADA </big> </b>");
+exibir("<big> </big>"); 
+
+var multiplicador = 1;
+
+while(multiplicador <= 10) { //Com while
+	exibir(7 * multiplicador);
+	multiplicador = multiplicador + 1;
+}
+
+for(var multiplicador = 1; multiplicador <=10; multiplicador = multiplicador + 1); { //Com for
+	exibiir(7 * multiplicador);
+}
+
+exibir("FIM");
+
+</script>

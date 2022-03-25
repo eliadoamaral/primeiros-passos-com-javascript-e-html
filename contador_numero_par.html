@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa exibe ao usuário os números pares existentes entre 1 e o número desejado.
+
+document.write("<title> Contador de números pares </title>");
+
+var numeroescolhido = parseInt(prompt("Por favor, escolha o número desejado"));
+var contador = 2;
+var parestotal = numeroescolhido / contador;
+
+exibir("<h1> Bem-vindo ao meu Programa! </h1>");
+exibir("<big> <b> CONTADOR DE NÚMEROS PARES </big> </b>");
+exibir("<big> Números pares são todos aqueles que, divididos por dois, o resto é igual a zero. Também pode-se entender como qualquer número que termine com 0, 2, 4, 6 e 8. </big>")
+exibir("<b> CALCULAR: </b>" + "Números pares existentes entre 1 e </big>" + numeroescolhido + ".");
+exibir("O total de números pares foi: " + parestotal);
+
+while (contador <= numeroescolhido) {
+	exibir("• " + contador);
+	contador=contador+2;
+}
+
+exibir("FIM");
+
+</script>

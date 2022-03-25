@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa é uma introdução ao "for".
+
+document.write("<title> Media de idades </title>");
+exibir("<h1> Bem-vindo ao meu Programa! </h1>");
+exibir("<big> <b> MEDIA DE IDADES </big> </b>");
+exibir("<big> </big>"); 
+
+var totalFamiliares = parseInt(prompt("Qual a quantidade de familiares?"));
+
+var numero = 1;
+
+while(numero <= totalFamiliares) {
+	var idade = parseInt(prompt("Informe a idade do familiar"));
+	numero++;
+}
+
+exibir("FIM")
+ 
+</script>

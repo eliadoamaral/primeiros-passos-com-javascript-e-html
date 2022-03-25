@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<script>
+
+function espaço () {
+
+	document.write("<br>");
+	document.write("<br>");
+}
+
+function exibir (texto) {
+
+	document.write(texto);
+	espaço();
+}
+
+//Esse programa funciona como uma calculadora parar calcular o IMC do indivíduo e também dizer se está dentro do recomendando.
+
+document.write("<title> Calculadora de IMC </title>");
+
+function calculaImc (altura, peso) {
+
+	return peso / (altura*altura);
+}
+
+var nome = prompt("Informe o seu nome");
+var altura = prompt(nome + ", Informe sua altura");
+var peso = prompt(nome +", Informe seu peso");
+var imcTotal = calculaImc(altura, peso);
+
+exibir("<h1> Bem-vindo ao meu Programa! </h1>");
+exibir("<big> <b> CALCULADORA DE IMC </big> </b>");
+exibir("<big> O Índice de Massa Corporal (IMC) é uma medida usada para calcular se uma pessoa está no peso ideal. </big>");
+exibir("O cálculo é feito através da seguinte fórmula: IMC = Peso / Altura²");
+exibir("O IMC ideal varia entre 18,5 e 35.");
+exibir("<b> Classificação de IMC: </b>");
+exibir("• IMC menor que 18,5: abaixo do peso");
+exibir("• IMC entre 18,5 e 24,9: saudável");
+exibir("• IMC entre 25,0 e 29,9: sobrepeso");
+exibir("• IMC entre 30,0 e 34,9: obesidade grau I");
+exibir("• IMC entre 35 e 39,9: obesidade grau II")
+exibir("• IMC maior que 40,0: obesidade grau III")
+
+exibir("<b> Resultado: </b>" + nome + ", o seu IMC total é de " + imcTotal);
+
+if(imcTotal < 18.5) {
+	exibir("Você está abaixo do recomendado! Seu IMC precisa melhorar.");
+}
+
+if(imcTotal > 35) {
+	exibir("Você está acima do recomendado! Seu IMC precisa melhorar.");
+}
+
+if(imcTotal >= 18.5 && imcTotal <= 35) {
+	exibir("Seu IMC está dentro do recomendado. Parabéns!");
+} 
+
+</script>
